@@ -1,0 +1,19 @@
+ .t1
+{
+
+margin-bottom: 20PX;
+
+}
+
+.bg-info
+{
+    width: 100vw;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 20px;
+    
+}
+tr:hover
+{
+    color: white;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tables</title>
+</head>
+<body>
+    <center><h1 style="background-color: cyan; margin-bottom: 0;">Tables And Lists</h1></center>
+    <div class=" bg-info">
+        <h5  style="color: black; padding: 10;"> This Table is created only using html</h5>
+     <center>  <table class="t1">
+            <style>
+                table {
+                    border-collapse: collapse;  
+                    background-color: burlywood;
+                }
+                th, td {
+                    text-align: center;
+                    border: 1px solid black;  
+                    padding: 10px; 
+                }
+            </style>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Burger</td>
+                    <td>3</td>
+                    <td>3.99$ each</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>5</td>
+                    <td>6.99$ each</td>
+                </tr>
+                <tr>
+                    <td>KFC Bucket</td>
+                    <td>1</td>
+                    <td>6.99$ each</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>53.91$</td>
+                </tr>
+            </tfoot>
+        </table></center>
+        <h5  style="color: white; padding: 10;"> This Table is created only using bootstrap</h5>
+        <table class="table table-responsive table-bordered table-striped table-hover table-sm">
+            <tr><th>Clothes</th><th>Price</th><th> In Stock</th></tr>
+            <tr><td>T-Shirts</td><td>20.1$/p</td><td>20p</td></tr>
+            <tr><td>Jeans</td><td>15.2$/p</td><td>22p</td></tr>
+            <tr><td>Jackets</td><td>110.1$/p</td><td>50p</td></tr>
+            <tr><td>Sweaters</td><td>10.1$/p</td><td>20p</td></tr>
+        </table></div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
