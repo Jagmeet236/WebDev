@@ -5,57 +5,123 @@ body {
     background-color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
+
+h3 {
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    position: absolute;
+    top: 5.0%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 p {
     margin: 0;
     padding: 0;
 }
-.parent
-{
-padding: 20px;
-background-color: #a4f5db;
-position: relative;
-width: 70vw ;
-height:80vh ;
-top: 20px;
-margin-left: auto!important;
-margin-right: auto!important;
-border-radius: 25px 70px 50px 15px;
-filter: drop-shadow(8px  8px 10px #a4f5db);
+
+.parent {
+    padding: 20px;
+    background-color: #a4f5db;
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    top: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 25px 70px 50px 15px;
+    filter: drop-shadow(8px 8px 10px #a4f5db);
 }
-.heading
-{
+
+.heading2 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
-    color:black;
+    color: black;
 
 }
-.signIn, .signUp {
+
+.signIn,
+.signUp {
     position: absolute;
     width: 45%;
     height: 75%;
     top: 100px;
     margin: 10px;
     border-radius: 25px 70px 50px 15px;
-}
    
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.form1 {
+    margin-top: 20px;
+    width: 90%;
+    position: absolute;
+    top: 0px;
+    color: white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#username,
+#email,
+#password {
+    position: sticky;
+    margin: 10px;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+a{
+    color:#a4f5db ;
+    margin: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s ease-in;
+   font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+a:hover
+{
+ font-size:large ;   
+}
+
+.done {
+   margin: 10px;
+    width: 80%;
+    border-radius: 10px;
+    height: 40px;
+  background-color: #a4f5db;
+  font-size: larger;
+  margin-left: 30px;
+
+ 
+}
+
 .signIn {
     background-color: black;
     left: 10px;
    
+     
+    
 }
-
 .signUp {
     background-color: black;
     right: 10px;
 }
-.shader1, .shader2 {
+
+/* .shader1, .shader2 {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#a4f5db ;
     width: 45%;
     height: 75%;
@@ -63,17 +129,23 @@ filter: drop-shadow(8px  8px 10px #a4f5db);
     margin: 10px;
     border-radius: 25px 70px 50px 15px; 
     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
-    transition: opacity 0.5s ease-in-out; /* Add this line */
+    transition: opacity 0.5s ease-in-out 
+} */
+.heading1 {
+    font-family: 'Courier New', Courier, monospace;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+
 }
 
-.shader1 {
+/* .shader1 {
     left:10px;
 }
 
 .shader2 {
     right:10px;
-}
+} */
 
-.shader1:hover, .shader2:hover {
-    opacity: 0; 
-}
+/* .shader1:hover,
+.shader2:hover {
+    display: none;
+} */
