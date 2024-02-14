@@ -134,20 +134,7 @@ font-weight: bold;
     right: 10px;
 }
 
-/* .shader1, .shader2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#a4f5db ;
-    width: 45%;
-    height: 75%;
-    top: 100px;
-    margin: 10px;
-    border-radius: 25px 70px 50px 15px; 
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
-    transition: opacity 0.5s ease-in-out 
-} */
+
 .heading1 {
     font-family: 'Courier New', Courier, monospace;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
@@ -156,15 +143,4 @@ font-weight: bold;
 
 
 
-/* .shader1 {
-    left:10px;
-}
 
-.shader2 {
-    right:10px;
-} */
-
-/* .shader1:hover,
-.shader2:hover {
-    display: none;
-} */
