@@ -1,62 +1,66 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-body
-{
+
+body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../resources/images/sidhu_moosewala.jpeg');
     background-repeat: repeat-x;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     /* background-size: 100% 100%; */
     background-size: 135% 100%;
-    background-position: left
-  
+    /
 }
-.media 
-{
+
+.media {
     position: absolute;
     left: 15%;
     top: 40%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.musicCard
-{ 
+
+.musicCard {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color:black;
+    background-color: black;
     border-radius: 10px;
     justify-content: center;
     transition: 0.5s ease-in-out;
-      
+    filter:grayscale();
 }
-.musicCard:hover{
+
+.musicCard:hover {
+    filter: none;
     scale: 1.1;
 }
-.musicCard >span{
+
+.musicCard>span {
     margin-bottom: 10px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
 
-    
+
 }
-.next{
+
+.next {
     margin-top: 10px;
     margin-bottom: 10px;
-    color:#a4f5db;
+    color: #a4f5db;
     text-decoration: none;
     text-align: center;
-    
-   font-size:large;
+
+    font-size: large;
     font-family: 'Courier New', Courier, monospace;
-      
+
 }
-.musicCard >img
-{
+
+.musicCard>img {
     margin-top: 10px;
     width: 90%;
     margin-bottom: 10px;
+
 
 }
