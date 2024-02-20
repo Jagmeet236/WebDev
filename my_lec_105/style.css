@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.entities>h3 {
+    text-align: center;
+    position: relative;
+    background-color: coral;
+    padding: 5px;
+    
+}
+.entities > p{
+    text-align:justify;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: wheat;
+}
+
+.entities {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 3px solid green;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out; 
+}
