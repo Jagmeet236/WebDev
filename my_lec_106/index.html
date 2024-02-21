@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Css Selectors</title>
+</head>
+
+<body>
+    <h1>Css Selectors</h1>
+    <div>
+        <p>
+            <span>This is the first Div</span>
+            This paragraph tag is the child of the this div and we can style this 'p' tag using child selector and this
+            <strong>'child selector'</strong> works only if this para tag is the direct child of the parent tag which in
+            this case is the div. if we want to select the span tag we cannot select it this like this div &gt; span
+            because the styling will not work, as this span tag is not the direct child of the div.We can use another
+            way of selecting this span tag using the <strong>'descendant selector'</strong>, It selects all span
+            elements or any other tag/elements that are the descendants of this div element. A descendant is a child,
+            grandchild, great-grandchild, and so on.
+        </p>
+
+    </div>
+     <div class="div1">
+    <p class="para1"> This is the div two. This 'p' tag is selected using the <strong> class selector</strong> </p>
+</div>
+
+<div id="div2">Hi, i am the div 3 and <br>i am selected by using the 
+<strong>Id Selector</strong>  </div> 
+
+</body>
+
+</html>

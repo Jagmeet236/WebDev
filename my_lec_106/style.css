@@ -1,0 +1,86 @@
+
+/* universal selectors */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* element selector */
+h1 {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+
+}
+
+/* element selector */
+div {
+
+    position: absolute;
+    width: 250px;
+    height: fit-content;
+    background-color: beige;
+    padding: 10px;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* class selector */
+.div1 {
+    width: 250px;
+    height: fit-content;
+    background-color: aquamarine;
+    position: absolute;
+    padding: 10px;
+    left: 35%;
+    transition: 0.5s ease-in;
+    transform: translate(-50%, -50%)
+}
+
+/* class selector */
+.para1 {
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* child selector */
+div > p {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: justify;
+}
+
+/* descendant selector */
+div span {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 10px;
+    color: white;
+    display: block;
+    font-size: larger;
+    padding: 2px;
+}
+
+/* pseudo selectors */
+.div1:hover {
+    scale: 1.1;
+}
+
+/* id selector */
+#div2{
+    color: #000;
+    background-color: rgb(168, 168, 237);
+    position: absolute;
+    padding: 10px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width:fit-content;
+    height: fit-content; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
