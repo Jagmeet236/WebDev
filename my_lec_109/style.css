@@ -1,13 +1,61 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.box
-{
-    height:200px;
+
+.box {
+    height: 100px;
     background-color: rgba(203, 112, 46, 0.642);
     border-radius: 5px;
     margin: 10px;
-font-size: 1rem;
-border: 2px solid black;    
+    font-size: 1rem;
+    border: 2px solid black;
+}
+
+/* now we have changed the block -> inline using display property */
+.box2 {
+    display: inline;
+    /* this is not working on this 
+    using this property
+     */
+    margin-top: 500px;
+
+}
+
+.box3 {
+    /* using inline-bloc property we change the position of this block  */
+    /* margin-top:50%; 
+       margin-top: 100px; 
+    */
+
+    display: inline-block;
+    text-align: start;
+    /* now this is working we can adjust width and height of this box now using this display property */
+    width: 200px;
+    height: 200px;
+padding: 10px;
+ 
+
+}
+
+.p1 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.sp1 {
+    color: black;
+    background-color: rgb(234, 118, 118);
+    margin: 10px, 0px, 10px, 10px;
+    padding: 5px;
+
+}
+
+.sp2 {
+    color: black;
+    background-color: cornsilk;
+    margin: 10px, 0px, 10px, 10px;
+    padding: 5px;
 }

@@ -12,9 +12,33 @@
 <body>
     <div class="myContainer"> 
         <div class="box"><h4>i am the box1</h4> 
-        vi = 1% of the size of the viewport’s inline axis.<br>
-vb = 1% of the size of the viewport’s block axis</div>
-<div class="box2"><h4>i am the box2</h4>  </div>
+      <strong>  vi</strong> = 1% of the size of the viewport’s inline axis.<br>
+<strong>vb </strong> = 1% of the size of the viewport’s block axis<br>
+<hr>
+<strong>“The font-size of this box will be 28px, because the parent font-size is 14px and this box also has its own font-size of 2em. em is the multiplier of the current value, therefore it’s 14px * 2 = 28px.”
+</strong>
+</div>
+<div class="box2"><h4>i am the box2</h4>vw: Relative to 1% of the width of the viewport*<br>
+    vh:Relative to 1% of the height of the viewport* 
+    <hr>
+    <strong>“The font-size of this box will be 32px, because the parent font-size is 14px and this box also has its own font-size of 2rem. rem is the multiplier of the root element value, therefore it’s 16px * 2 = 32px. 16px is the default font-size in a browser”
+    </strong>
+
+ </div>
+<div class="box3">
+    <h4>i am the box3</h4>
+    <div class="child"> Hi i am the child of the box3
+    <strong>height and width is given using '%':
+        Relative to the parent element, means if the parent H and W is 100px and child 50% of the parent H and W means its W and H is 50px</strong>
+    </div>
+    <div class="child2"><h6>vmin and vmax </h6>
+        <p>
+            vmin:Relative to 1% of viewport's* smaller dimension<br>
+            vmax:Relative to 1% of viewport's* larger dimension
+            Note:<strong>1vmin = 1vw or 1vh, whichever is smaller.</strong>
+        </p>
+    </div>
+</div>
     </div>
    
 </body>
