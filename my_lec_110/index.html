@@ -1,66 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css OverFlow Property</title>
 </head>
 <style>
-    *{
+    * {
         margin: 10px;
         padding: 0;
     }
-    .box{
-       margin-left: auto;
-       margin-right: auto;
-    
+
+    .box {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
         width: 40vw;
-        height:150px;
+        height: 150px;
+        padding: 5px;
 
     }
-    .box1{
+
+    .box1 {
         background-color: rgb(145, 235, 235);
-        overflow:hidden ;
-        
+        overflow: hidden;
+
     }
-    .box2{
+
+    .box2 {
         background-color: rgb(233, 210, 183);
         overflow: scroll;
-        
-    }
-    .box3{
-        background-color: rgb(244, 184, 189);
-        overflow-x: auto;
-  overflow-y: hidden;
-    }
-    .box4{
-        background-color: rgb(191, 231, 165);
-    }
-    .box5{
-        background-color: rgb(159, 234, 178);
-    }
-div h2{
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    margin: 2px;
-}
 
+    }
+
+    .box3 {
+        background-color: rgb(244, 184, 189);
+        overflow: auto;
+    }
+
+    .box4 {
+        background-color: rgb(191, 231, 165);
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+    }
+
+    .box5 {
+        background-color: rgb(159, 234, 178);
+        overflow: clip;
+
+    }
+    .box6{
+        background-color: rgb(241, 234, 169); 
+        overflow:hidden auto;
+    }
+
+    .inner-box {
+        width: 200vw;
+    }
+
+    div h2 {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        margin: 2px;
+    }
 </style>
+
 <body>
-    <div class="box box1"><h2>hi i am box1</h2>
+    <div class="box box1">
+        <h2>hi i am box1</h2>
         <strong>here i used the overflow-hidden to hanlde the overflow</strong>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet inventore tempora! Odio, consectetur commodi itaque natus dicta nemo aspernatur expedita repellendus iure illo sequi iusto autem nulla veniam quidem modi dolores culpa sint maxime dolore obcaecati libero rerum architecto? Fugiat hic ut temporibus laboriosam fuga quibusdam excepturi minus quisquam, ullam sequi, nesciunt corrupti odio harum deleniti facere sed voluptate vel? In alias praesentium aspernatur, deleniti nobis perferendis expedita aliquid perspiciatis. Perferendis ipsam assumenda impedit facere doloremque! Fugit, minima aliquid?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet inventore tempora! Odio, consectetur
+        commodi itaque natus dicta nemo aspernatur expedita repellendus iure illo sequi iusto autem nulla veniam quidem
+        modi dolores culpa sint maxime dolore obcaecati libero rerum architecto? Fugiat hic ut temporibus laboriosam
+        fuga quibusdam excepturi minus quisquam, ullam sequi, nesciunt corrupti odio harum deleniti facere sed voluptate
+        vel? In alias praesentium aspernatur, deleniti nobis perferendis expedita aliquid perspiciatis. Perferendis
+        ipsam assumenda impedit facere doloremque! Fugit, minima aliquid?
     </div>
-    <div class="box box2"><h2>hi i am box2</h2>
-        <strong> here i have the overflow-scroll to handle the overflow, but<br>
-            there is a problem the scroll will be there irrespective of the content is 
+    <div class="box box2">
+        <h2>hi i am box2</h2>
+        <strong> here i have the overflow-scroll to handle the overflow, but
+            there is a problem the scroll will be there irrespective of the content is
             overflowing or not
         </strong>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque voluptates asperiores tenetur. In ducimus vero quaerat velit, quasi saepe voluptatem laborum! Sed beatae voluptate, incidunt vel placeat quam, natus illo modi officia itaque fugit voluptatum consectetur fugiat dolore temporibus reprehenderit a nam amet animi nostrum. Non inventore soluta in sapiente, unde quae molestias facere itaque fugiat nam rerum sunt blanditiis doloribus ipsam expedita quisquam adipisci eveniet et modi! Natus consequuntur provident, doloribus voluptatibus ipsa non ullam ex dolorem vel qui, dolores tempora aliquid deserunt. Tempora omnis aut quos temporibus quae cum perspiciatis voluptatum unde. Ad pariatur est dicta veritatis?</div>
-    <div class="box box3"><h2>hi i am box3</h2></div>
-    <div class="box box4"><h2>hi i am box4</h2></div>
-    <div class="box box5"><h2>hi i am box5</h2></div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque voluptates asperiores tenetur. In
+        ducimus vero quaerat velit, quasi saepe voluptatem laborum! Sed beatae voluptate, incidunt vel placeat quam,
+        natus illo modi officia itaque fugit voluptatum consectetur fugiat dolore temporibus reprehenderit a nam amet
+        animi nostrum. Non inventore soluta in sapiente, unde quae molestias facere itaque fugiat nam rerum sunt
+        blanditiis doloribus ipsam expedita quisquam adipisci eveniet et modi! Natus consequuntur provident, doloribus
+        voluptatibus ipsa non ullam ex dolorem vel qui, dolores tempora aliquid deserunt. Tempora omnis aut quos
+        temporibus quae cum perspiciatis voluptatum unde. Ad pariatur est dicta veritatis?
+    </div>
+    <div class="box box3">
+        <h2>hi i am box3</h2>
+        <strong>In this box i have used overflow-auto to handle the overflow, and this is most used overflow property
+            as the scrollbar will only appear when the content is overflowing from his div/container.
+        </strong>
+    </div>
+    <div class="box box4">
+        <h2>hi i am box4</h2>
+        <strong>i have used the x and y property of the overflow to handle the overflow
+            i have set the overflow-x to auto and overflow-y to hidden ,this way only horizontal
+            scroll will appear if the content is overflowing.
+        </strong>
+        <div class="inner-box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta consequuntur sit neque, blanditiis corrupti
+            reprehenderit ea necessitatibus quae accusamus voluptatem eum, adipisci explicabo! Alias consequuntur
+            eveniet est consequatur, iure beatae saepe, expedita a similique, suscipit sed voluptatum quia fuga
+            quibusdam unde sunt sint? Nisi inventore voluptatibus corrupti quae? Ipsum possimus alias perspiciatis
+            facere distinctio rerum animi odio cupiditate qui tempora, iure magni culpa vel assumenda a rem fuga nam
+            illo hic et ducimus in facilis voluptatibus tempore. Sint rerum totam, tempore iste ab minus sequi unde
+            temporibus impedit minima, in vitae aliquid animi quaerat molestias quibusdam magnam incidunt cum
+            dignissimos.
+        </div>
+    </div>
+    <div class="box box5">
+        <h2>hi i am box5</h2>
+        <strong>overflow: hidden: This property causes the content to be clipped to the element’s padding box, and any
+            content that overflows the padding box is not displayed1. However, the element with overflow: hidden could
+            still programmatically scroll.
+            <br>
+            overflow: clip: Like overflow: hidden, the content is clipped to the element’s padding box. The difference
+            is that overflow: clip also forbids all scrolling, including programmatic scrolling . This means that the UI
+            could not end up being scrolled.</strong>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate error, blanditiis voluptas, facere eligendi
+        corporis dicta, nulla aliquid cum velit quas! Atque commodi iste repudiandae rerum soluta. Enim ducimus fugit
+        blanditiis corporis ab autem, eaque beatae architecto corrupti at voluptatibus, recusandae commodi dolore
+        dolorum officia numquam? Voluptas, iure! Deserunt iste voluptatem provident deleniti ducimus sequi natus omnis
+        aperiam officiis alias, modi debitis nihil distinctio, magni, totam fuga nisi suscipit voluptatum cumque
+        exercitationem dolor facere! Odit in sit officiis veniam consequatur quisquam repellendus impedit rem. Dolor
+        mollitia impedit unde, laudantium ipsum voluptate cum ducimus eligendi nisi doloremque, eveniet veritatis aut
+        repudiandae!
+    </div>
+    <div class="box box6">
+        <h2>hi i am box6</h2>
+        <strong>here i used the overflow like this overflow: hidden auto; means in the x-axis the content is hidden if
+            the content is overflowing and auto in the y-axis ,but we dont use like this because this is not a valid  css property.
+        </strong>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, ab eius totam nihil repellendus molestiae eum? Maxime nemo fuga atque porro dolores velit tenetur, laborum sunt in saepe quia expedita beatae asperiores inventore aspernatur voluptas modi ratione dicta rem cupiditate! Ullam excepturi aspernatur hic laborum recusandae odio! Aliquam sint, dicta fugiat quasi, aperiam autem quia commodi fuga vero in earum. Sapiente tempora non, neque exercitationem placeat eligendi officia ipsa ad voluptate voluptas! Amet aspernatur eaque quasi totam officiis dolor iste maxime quas corrupti nulla, ducimus tempora voluptate quam iusto porro quis voluptatem hic. Provident laudantium veritatis fugit, ab reprehenderit quis.
+
+    </div>
 </body>
+
 </html>
