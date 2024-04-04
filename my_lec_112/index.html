@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* here we in the root selector can declare variables and can use these variables multiple 
+times just like we declare variables in any programming  language    */
+    :root {
+
+        /* this is a variable [--color] */
+        --color: rgb(143, 250, 214);
+
+        --secColor: rgb(197, 244, 228);
+
+        --defPad: 20px;
+    }
+
+    ui li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    ui li:first-child {
+        /* here i have declared a private 
+            variable --color and can be used only by this first child */
+            /* and this variable will always have the higher priority then the global variable [--color] */
+        --color: rgb(156, 156, 238);
+        background-color: var(--color);
+
+    }
+
+    ui {
+
+        background-color: var(--color);
+        display: flex;
+        padding: var(--defPad);
+    }
+
+    .container {
+        background-color: var(--secColor);
+        padding: var(--defPad);
+    }
+
+    .box {
+        width: 200px;
+        height: fit-content;
+        text-align: justify;
+        padding: var(--defPad);
+        /* now here if this property does not find any variable with the given
+        name ,it will then look for a default value that we have given. this is value is c/a fallback value */
+        background-color: var(--accentColor, rgb(241, 198, 116));
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ui>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ui>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Unde, sunt officia voluptas corrupti
+        voluptatum deserunt ipsum molestiae enim eius eligendi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum fuga officiis animi inventore doloremque
+        fugiat delectus? Sapiente vel, saepe maiores eos
+        officia, eveniet fuga qui eius consectetur enim tempora
+        harum.
+
+    </div>
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto doloremque, tempore aliquid, nobis sed at
+        delectus praesentium repellat modi reprehenderit culpa quis accusamus, cum deleniti molestias expedita nisi
+        excepturi inventore.
+    </div>
+</body>
+
+</html>
