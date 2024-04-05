@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(201, 201, 198);
+}
+/* ::selection: This pseudo-element applies styles to the part of a document that has been highlighted by the user */
+::selection{
+background-color: black;
+color: aqua;
+}
+.boxes{
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid royalblue;
+    margin: 6px;
+}
+.box{
+  
+    margin: 6px;
+}
+/* .box:nth-child(2): This pseudo-class selector targets the second child element of the parent that has the class box, applying a specific background color and text color */
+.box:nth-child(2){
+    background-color: rgb(129, 129, 239);
+    color: rgb(237, 181, 77);
+}
+/* .box::first-letter: This pseudo-element selector targets the first letter of each element with the class box, applying a specific color and font size */
+.box::first-letter{
+    color: beige;
+    font-size: 2em;
+}
+/* .boxes::after: This pseudo-element selector inserts content after the content of each element with the class boxes */
+.boxes::after{
+    content: "I love Web Development";
+}
+/* .boxes::before: This pseudo-element selector inserts content before the content of each element with the class boxes */
+.boxes::before{
+    content: "Hi My name is Jagmeet Singh";
+}
+/* .box:nth-last-child(1): This pseudo-class selector targets the last child element of the parent that has the class box, applying a specific text color */
+.box:nth-last-child(1){
+    color: greenyellow;
+}
+/* [data-color="primary"]: This attribute selector targets all elements with a data-color attribute value of primary, applying a specific padding-top */
+[data-color="primary"]{
+    padding-top: 45px;
+}
+/* .boxes *: This selector targets all child elements (direct and indirect) within elements with the class boxes. It applies a black border to these elements. */
+.boxes *{
+    border: 2px solid black;
+}
+input::placeholder{
+    color: red;
+    font-size: 1rem;
+}
