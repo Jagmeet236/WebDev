@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #2b6176;
+    --secondary-color: rgb(196 229 196);
+    --third-color: rgb(231, 231, 125);
+    --def-Font-Size: 3rem;
+}
+
+.nav {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    z-index: 1;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.item {
+    display: inline;
+    margin-right: 96px;
+    margin-left: 10px;
+    font-size: var(--def-Font-Size);
+    padding: 5px;
+
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.body {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--secondary-color);
+    height: 360px;
+}
+
+.box {
+    border-radius: 10px;
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    background-color: var(--primary-color);
+    transition: 0.5s ease-in-out;
+}
+
+.box1 {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.box2 {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+.txt {
+    font-size: var(--def-Font-Size);
+    font-family: cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    color: var(--third-color);
+}
+
+.box:hover {
+    width: 350px;
+    height: 350px;
+}
+
+.floating-btn {
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.img {
+    object-fit: cover;
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+.message {
+    padding: 10px;
+    position: relative;
+
+    height: 250px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.msgBox {
+    position: absolute;
+    width: 50vw;
+    height: 200px;
+    background-color: var(--primary-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 100px;
+
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    text-align: center;
+    font-size: var(--def-Font-Size);
+    color: var(--third-color);
+}
+
+.footer {
+    position: relative;
+    height: 20vh;
+    background-color: var(--third-color);
+    border: 2px solid var(--primary-color);
+    margin: 10px;
+   
+}
+.txtFooter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    text-align: center;
+    font-size: var(--def-Font-Size);
+    color: var(--primary-color);
+}

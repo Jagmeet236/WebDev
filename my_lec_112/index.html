@@ -24,12 +24,12 @@ times just like we declare variables in any programming  language    */
         --defPad: 20px;
     }
 
-    ui li {
+    ul li {
         list-style: none;
         margin: 20px;
     }
 
-    ui li:first-child {
+    ul li:first-child {
         /* here i have declared a private 
             variable --color and can be used only by this first child */
             /* and this variable will always have the higher priority then the global variable [--color] */
@@ -38,7 +38,7 @@ times just like we declare variables in any programming  language    */
 
     }
 
-    ui {
+    ul {
 
         background-color: var(--color);
         display: flex;
@@ -63,11 +63,11 @@ times just like we declare variables in any programming  language    */
 
 <body>
     <div class="nav">
-        <ui>
+        <ul>
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
-        </ui>
+        </ul>
     </div>
     <div class="container">
         Lorem ipsum dolor sit amet
